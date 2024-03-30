@@ -5,7 +5,8 @@
 	margin: 0;
 	font-family: "Quicksand" !important;
 	color: #333;
-	}
+	max-width: 100%;
+}
 
 .nav-logo {
 	/* font-family: OCR A Std, monospace !important; */
