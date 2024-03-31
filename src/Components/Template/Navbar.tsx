@@ -1,15 +1,21 @@
 import { useState } from "react";
 import { BsFillBrightnessHighFill, BsFillMoonStarsFill } from "react-icons/bs";
+import modeSubject from "../ModeSubject";
+import { DisplayMode } from "../../types/DisplayModes";
 
 
 const handleThemeSwitch = (theme: string, setTheme: React.Dispatch<React.SetStateAction<string>>) => {
+	const oppositeTheme = (theme == DisplayMode.LIGHT) ? DisplayMode.DARK : DisplayMode.LIGHT;
+
 	if (theme == 'light') {
-		localStorage.theme = 'dark';
-		setTheme('dark');
-		return ;
+		localStorage.theme = oppositeTheme;
+		setTheme(oppositeTheme);
+	} else {
+		localStorage.theme = oppositeTheme;
+		setTheme(oppositeTheme);
 	}
-	localStorage.theme = 'light';
-	setTheme('light');	
+	modeSubject.notify(localStorage.theme);
+	console.log("notified");
 };
 
 function switchPageTheme() : void {
@@ -36,7 +42,7 @@ const Navbar = () : JSX.Element => {
 
 	return (
 		<>
-		<nav className="py-3 sticky top-0 shadow-md bg-white border-b border-gray-300 dark:bg-gray-900"> {/* Add different shadow color in dark mode*/}
+		<nav className="py-3 flex-no-wrap fixed top-0 w-full shadow-md bg-white border-b border-gray-300 dark:bg-gray-900"> {/* Add different shadow color in dark mode*/}
 			<div className="max-w-screen-xl container mx-auto flex justify-between items-center ">
 				<a className="hover:rotate-6 transition-transform" href="#"><h3 className="text-4xl dark:text-white">Khiar</h3></a>
 				{/* <div className="flex"> */}

@@ -1,3 +1,5 @@
+// import { useEffect, useState } from 'react';
+
 const Footer = () => {
     return (
         <footer className=" py-2 text-center bg-red-400">

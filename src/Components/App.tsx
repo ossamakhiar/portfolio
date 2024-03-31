@@ -1,19 +1,16 @@
-import dark_bg from "../assets/dark_bg.jpg"
-import light_bg from "../assets/light_bg.jpg"
 import Navbar from './Template/Navbar';
 import Footer from './Template/Footer';
+import Home from './Home';
+
 import "../style/index.css"
 
 function App() {
 	return (
-		<div className="App w-screen h-screen"  style={{backgroundImage: `url(${localStorage.theme === 'dark' ? dark_bg : light_bg})`, backgroundSize: "cover"}}>
+		<div className="App w-screen h-screen" >
 			<Navbar />
 
-			<div className='h-full' style={{backgroundImage: `url(${localStorage.theme === 'dark' ? dark_bg : light_bg})`, backgroundSize: "cover"}}>
-				<main>
-					hello
-				</main>
-			</div>
+			<Home />
+
 
 			<div className="about my-8">
 				<h1 className=' text-3xl'>About</h1>
