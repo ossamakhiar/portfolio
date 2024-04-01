@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BsFillBrightnessHighFill, BsFillMoonStarsFill } from "react-icons/bs";
 import modeSubject from "../ModeSubject";
 import { DisplayMode } from "../../types/DisplayModes";
@@ -7,37 +7,39 @@ import { DisplayMode } from "../../types/DisplayModes";
 const handleThemeSwitch = (theme: string, setTheme: React.Dispatch<React.SetStateAction<string>>) => {
 	const oppositeTheme = (theme == DisplayMode.LIGHT) ? DisplayMode.DARK : DisplayMode.LIGHT;
 
-	if (theme == 'light') {
+	if (theme == DisplayMode.LIGHT) {
 		localStorage.theme = oppositeTheme;
 		setTheme(oppositeTheme);
 	} else {
 		localStorage.theme = oppositeTheme;
 		setTheme(oppositeTheme);
 	}
-	modeSubject.notify(localStorage.theme);
-	console.log("notified");
 };
 
 function switchPageTheme() : void {
-	if (localStorage.theme === 'dark') {
-		document.documentElement.classList.add('dark');
+	if (localStorage.theme === DisplayMode.DARK) {
+		document.documentElement.classList.add(DisplayMode.DARK);
 		return ;
 	}
-	document.documentElement.classList.remove('dark');
+	document.documentElement.classList.remove(DisplayMode.DARK);
 }
 
 function ThemeIcon({theme}) {
-
-    if (theme !== 'dark')
-        return <BsFillMoonStarsFill size={25} />
-
+	if (theme !== DisplayMode.DARK)
+		return <BsFillMoonStarsFill size={25} />
+	
     return <BsFillBrightnessHighFill size={25} fill="white" />;
 }
 
 const Navbar = () : JSX.Element => {
-	const [theme, setTheme] = useState<string>(localStorage.theme ? localStorage.theme : 'light');
-
-	switchPageTheme();
+	const [theme, setTheme] = useState<string>(localStorage.theme ? localStorage.theme : DisplayMode.LIGHT);
+	
+	
+	useEffect(() => {
+		switchPageTheme();
+		modeSubject.notify(localStorage.theme);
+		console.log("notified");
+	}, [theme]);
 
 
 	return (

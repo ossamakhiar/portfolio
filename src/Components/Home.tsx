@@ -16,8 +16,9 @@ const Home = () => {
     }
 
     useEffect( () => {
+        console.log("use effect");
         modeSubject.subscribe(observerCallback);
-        () => modeSubject.unsubscribe(observerCallback);
+        // return () => modeSubject.unsubscribe(observerCallback);
     }, []);
 
     return (

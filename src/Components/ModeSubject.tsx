@@ -13,11 +13,15 @@ class ModeSubject {
     }
 
     unsubscribe(observer: ObserverCallback) {
-        this.observers.filter((f) => f !== observer);
+        this.observers = this.observers.filter((f) => {
+            if (f == observer) return (false);
+            return (true);
+        });
+        console.log(this.observers);
     }
 
     notify(state: DisplayMode) {
-        console.log(this.observers);
+        console.log(this.observers, this.observers.length);
         this.observers.forEach((observer) => {
             observer(state);
         });
