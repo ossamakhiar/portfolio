@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&display=swap');
+
 
 
 * {
@@ -36,4 +38,11 @@
 	/* --tw-text-opacity: 1;
     color: rgb(232 121 249 / var(--tw-text-opacity)); */
 	color: #FFC94A;
+}
+
+.font-basic {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+
+	font-style: normal;
 }

@@ -17,11 +17,7 @@ const handleThemeSwitch = (theme: string, setTheme: React.Dispatch<React.SetStat
 };
 
 function switchPageTheme() : void {
-	if (localStorage.theme === DisplayMode.DARK) {
-		document.documentElement.classList.add(DisplayMode.DARK);
-		return ;
-	}
-	document.documentElement.classList.remove(DisplayMode.DARK);
+	document.documentElement.classList.toggle(DisplayMode.DARK, localStorage.theme === DisplayMode.DARK);
 }
 
 function ThemeIcon({theme}) {

@@ -5,7 +5,20 @@ import { DisplayMode } from '../types/DisplayModes';
 import modeSubject from "./ModeSubject";
 import { ObserverCallback } from '../types/ObserverCallback';
 import Typewriter from 'typewriter-effect';
+import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
 
+import codeforcesIcon from "../assets/codeforces.svg"
+
+const SocialIcons = ({iconsSize}) => {
+    return (
+        <div className="flex gap-5 mt-3">
+            <a href="https://codeforces.com/profile/ossamakhiar" className="hover:scale-125 transition duration-300"><img src={codeforcesIcon} width={30}/></a>
+            <a href="https://github.com/ossamakhiar" className="hover:scale-125 transition duration-300"><BsGithub size={iconsSize}/></a>
+            <a href="https://www.linkedin.com/in/oussama-khiar/" className="hover:scale-125 transition duration-300"><BsLinkedin size={iconsSize} fill="#0077B5"/></a>
+            <a href="https://stackoverflow.com/users/17616522/oussama-khiar" className="hover:scale-125 transition duration-300"><BsStackOverflow size={iconsSize} fill="#F47F24"/></a>
+        </div>
+    )
+}
 
 const Home = () => {
     const defaultTheme : DisplayMode = localStorage.theme ? localStorage.theme : DisplayMode.LIGHT;
@@ -45,6 +58,7 @@ const Home = () => {
                     <p className="font-extrabold text-base text-gray-900 dark:text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                         I'm a student of software engineering at 1337 Future is loading
                     </p>
+                    <SocialIcons iconsSize={30} />
                 </div>
             </main>
         </div>
