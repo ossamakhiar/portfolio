@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Hello world",
+        "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "img": "/src/assets/netpractice.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Trenscendance 2024",
+        "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "img": "/src/assets/philosophers.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Piscine object",
+        "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "img": "/src/assets/minishell.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Blah blah",
+        "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "img": "/src/assets/piscine_object.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Blah blah",
+        "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "img": "/src/assets/netpractice.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Piscine object",
+        "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "img": "/src/assets/netpractice.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Blah blah",
+        "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "img": "/src/assets/netpractice.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Blah blah",
+        "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "img": "/src/assets/netpractice.jpg"
+    }
+]

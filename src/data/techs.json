@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "C++", 
+        "img_src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
+        "link": "#"
+    },
+    {
+        "id": 2,
+        "title": "C", 
+        "img_src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
+        "link": "https://www.cprogramming.com/"
+    },
+    {
+        "id": 3,
+        "title": "JavaScript", 
+        "img_src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+        "id": 4,
+        "title": "TypeScript", 
+        "img_src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+        "link": "https://www.typescriptlang.org/"
+    },
+    {
+        "id": 5,
+        "title": "Node.js",
+        "img_src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+        "link": "https://nodejs.org"
+    },
+    {
+        "id": 6,
+        "title": "Express JS",
+        "img_src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
+        "link": "https://expressjs.com"
+    },
+    {
+        "id": 7,
+        "title": "Postgresql",
+        "img_src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg",
+        "link": "https://www.postgresql.org"
+    },
+    {
+        "id": 8,
+        "title": "Docker",
+        "img_src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
+        "link": "https://www.docker.com/"
+    },
+    {
+        "id": 9,
+        "title": "React JS",
+        "img_src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+        "link": "https://reactjs.org/"
+    },
+    {
+        "id": 10,
+        "title": "Linux",
+        "img_src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
+        "link": "https://www.linux.org/"
+    }
+]
