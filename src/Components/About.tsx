@@ -12,6 +12,7 @@ const About = () => {
                 a diverse range of challenges. From the intricacies of UNIX programming to the elegance of data structures and algorithms, 
                 I delve into multifaceted domains with enthusiasm. My explorations extend to the vibrant world of web development and mastering tools like Express.js. Additionally, I am delving into the realm of Docker, 
                 seeking to broaden my understanding of containerization and its impact on modern software deployment practices.
+                <a className="cursor-pointer text-blue-500 hover:text-blue-800"> Read more.</a>
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-5 mx-4">
@@ -29,6 +30,12 @@ const About = () => {
                     );
                 })}
             </div>
+            {/* <div className="flex items-center justify-center mt-5">
+                <button className="flex items-center bg-blue-500 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 text-white font-bold py-2 px-4">
+                    Explore more
+                    <IoArrowForward  />
+                </button>
+            </div> */}
         </div>
     )
 };

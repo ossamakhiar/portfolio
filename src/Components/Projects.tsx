@@ -1,7 +1,5 @@
 import { useEffect, useRef } from "react";
 import projects from "../data/projects.json"
-import img from "../assets/netpractice.jpg"
-
 
 const Projects = () => {
     const targetsRef = useRef<Element[]>([]);
@@ -39,7 +37,7 @@ const Projects = () => {
             
             {/* <div className="flex justify-center"> */}
             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-4 items-center">
-                {projects.map((project) => {
+                {projects.reverse().map((project) => {
                     return (
                         // redundant check
                     <div key={project.id} ref={el => el && !targetsRef.current.find((elem) => elem === el) && targetsRef.current.push(el)} className="sm:w-full md:max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  transition-opacity duration-1000 ease-in-out opacity-0">

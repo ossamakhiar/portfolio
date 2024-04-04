@@ -5,20 +5,8 @@ import { DisplayMode } from '../types/DisplayModes';
 import modeSubject from "./ModeSubject";
 import { ObserverCallback } from '../types/ObserverCallback';
 import Typewriter from 'typewriter-effect';
-import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
-
-import codeforcesIcon from "../assets/codeforces.svg"
-
-const SocialIcons = ({iconsSize}) => {
-    return (
-        <div className="flex gap-5 mt-3">
-            <a href="https://codeforces.com/profile/ossamakhiar" className="hover:scale-125 transition duration-300"><img src={codeforcesIcon} width={30}/></a>
-            <a href="https://github.com/ossamakhiar" className="hover:scale-125 transition duration-300"><BsGithub size={iconsSize}/></a>
-            <a href="https://www.linkedin.com/in/oussama-khiar/" className="hover:scale-125 transition duration-300"><BsLinkedin size={iconsSize} fill="#0077B5"/></a>
-            <a href="https://stackoverflow.com/users/17616522/oussama-khiar" className="hover:scale-125 transition duration-300"><BsStackOverflow size={iconsSize} fill="#F47F24"/></a>
-        </div>
-    )
-}
+import { HiOutlineDocumentText } from "react-icons/hi";
+import SocialIcons from './SocialIcons';
 
 const Home = () => {
     const defaultTheme : DisplayMode = localStorage.theme ? localStorage.theme : DisplayMode.LIGHT;
@@ -38,7 +26,7 @@ const Home = () => {
         // bg-[url("../assets/light_bg.jpg")] bg-cover dark:bg-[url("../assets/dark_bg.jpg")]
         <div className='h-full items-center flex justify-center' style={{backgroundImage: `url(${theme === DisplayMode.DARK ? dark_bg : light_bg})`, backgroundSize: "cover"}}>
             <main className="">
-                <div className=" py-3 px-10">
+                <div className="py-3 px-10">
                     <div className="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white sm:text-5xl md:text-6xl" style={{color: "white"}}>
                         <Typewriter
                             onInit={(typewriter) => {
@@ -58,7 +46,14 @@ const Home = () => {
                     <p className="font-extrabold text-base text-gray-900 dark:text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                         I'm a student of software engineering at 1337 Future is loading
                     </p>
-                    <SocialIcons iconsSize={30} />
+                    <div className="flex justify-between">
+                        <SocialIcons iconsSize={30} />
+                        <button className="p-2 bg-blue-500 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 px-4 text-white font-bold flex items-center">
+                            <HiOutlineDocumentText size={16} strokeWidth={2.2} stroke="white"/>
+                            {/* stroke="white" */}
+                            Resume
+                        </button>
+                    </div>
                 </div>
             </main>
         </div>
