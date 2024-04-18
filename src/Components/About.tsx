@@ -4,7 +4,7 @@ import technologies from "../data/techs.json"
 const About = () => {
 
     return (
-        <div className="max-w-7xl mx-auto items-center">
+        <div className="max-w-7xl mx-auto items-center" id="section-about">
             <h1 className='text-5xl font-bold text-center mb-3 text-gray-900 dark:text-white'>About me</h1>
             <p className='text-md md:text-xl  text-gray-900 dark:text-white font-medium font-basic mx-4'>
                 I am a passionate software engineering student at 1337 School, deeply engaged in developing my skills and contributing to 

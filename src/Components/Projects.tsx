@@ -1,6 +1,9 @@
 import { useEffect, useRef } from "react";
 import projects from "../data/projects.json"
 
+
+
+
 const Projects = () => {
     const targetsRef = useRef<Element[]>([]);
 
@@ -32,7 +35,7 @@ const Projects = () => {
 
 
     return (
-        <div className="lg:max-w-7xl mx-auto  mt-6">
+        <div className="lg:max-w-7xl mx-auto  my-6" id="section-projects">
             <h1 className='text-5xl font-bold text-center mb-5 text-gray-900 dark:text-white'>Projects</h1>
             
             {/* <div className="flex justify-center"> */}

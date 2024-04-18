@@ -8,7 +8,7 @@ import Typewriter from 'typewriter-effect';
 import { HiOutlineDocumentText } from "react-icons/hi";
 import SocialIcons from './SocialIcons';
 
-const Home = () => {
+const LandingPanel = () => {
     const defaultTheme : DisplayMode = localStorage.theme ? localStorage.theme : DisplayMode.LIGHT;
     const [theme, setTheme] = useState(defaultTheme);
 
@@ -24,7 +24,7 @@ const Home = () => {
 
     return (
         // bg-[url("../assets/light_bg.jpg")] bg-cover dark:bg-[url("../assets/dark_bg.jpg")]
-        <div className='h-full items-center flex justify-center' style={{backgroundImage: `url(${theme === DisplayMode.DARK ? dark_bg : light_bg})`, backgroundSize: "cover"}}>
+        <div id="section-home" className='h-screen items-center flex justify-center' style={{backgroundImage: `url(${theme === DisplayMode.DARK ? dark_bg : light_bg})`, backgroundSize: "cover"}}>
             <main className="">
                 <div className="py-3 px-10">
                     <div className="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white sm:text-5xl md:text-6xl" style={{color: "white"}}>
@@ -48,7 +48,7 @@ const Home = () => {
                     </p>
                     <div className="flex justify-between">
                         <SocialIcons iconsSize={30} />
-                        <button className="p-2 bg-blue-500 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 px-4 text-white font-bold flex items-center">
+                        <button className="ml-2 px-4 bg-blue-500 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 text-white font-bold flex items-center">
                             <HiOutlineDocumentText size={16} strokeWidth={2.2} stroke="white"/>
                             {/* stroke="white" */}
                             Resume
@@ -60,4 +60,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default LandingPanel;

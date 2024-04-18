@@ -1,24 +1,32 @@
 import Navbar from './Template/Navbar';
 import Footer from './Template/Footer';
-import Home from './Home';
-import About from './About';
-import Projects from './Projects'
-import Contact from './Contact';
+import Home from './Pages/Home';
 import "../style/index.css"
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+// import ProjectsPage from './Pages/ProjectsPage';
+import Projects from './Projects';
+import About from './About';
 
 
 function App() {
-	return (
-		<div className="App w-screen h-screen dark:bg-gray-900" >
-			<Navbar />
+	const router = createBrowserRouter([{
+		path: '/',
+		element: <Home />
+	},
+	{
+		path: "/projects",
+		element: <Projects />,
+	},
+	{
+		path: '/about',
+		element: <About />
+	},])
 
-		
-			<Home />
-			<div className='bg-white dark:bg-gray-900 py-4'>
-				<About />
-				<Projects />
-				<Contact />
+	return (
+		<div className="min-h-screen dark:bg-gray-900">
+			<Navbar />
+			<div className=" mt-[59px]">
+				<RouterProvider router={router} />
 			</div>
 			<Footer />
 		</div>
