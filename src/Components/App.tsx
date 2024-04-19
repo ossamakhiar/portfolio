@@ -5,7 +5,9 @@ import "../style/index.css"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // import ProjectsPage from './Pages/ProjectsPage';
 import Projects from './Projects';
-import About from './About';
+// import About from './About';
+import Contact from './Contact';
+import AboutPage from './Pages/AboutPage';
 
 
 function App() {
@@ -19,14 +21,20 @@ function App() {
 	},
 	{
 		path: '/about',
-		element: <About />
-	},])
+		element: <AboutPage />
+	},
+	{
+		path: "/contact-me",
+		element: <Contact />
+	}])
 
 	return (
-		<div className="min-h-screen dark:bg-gray-900">
+		<div className='dark:bg-gray-900'>
 			<Navbar />
-			<div className=" mt-[59px]">
-				<RouterProvider router={router} />
+			<div className="min-h-screen">
+				<div className=" mt-[59px]">
+					<RouterProvider router={router} />
+				</div>
 			</div>
 			<Footer />
 		</div>

@@ -64,5 +64,12 @@
         "title": "Git",
         "img_src": "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
         "link": "https://git-scm.com/"
+    },
+    {
+        "id": 12,
+        "title": "Problem Solving",
+        "img_src": "/problem_solving.png",
+        "link": "#"
     }
 ]
+
