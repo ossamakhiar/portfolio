@@ -35,12 +35,6 @@ const AboutPage = () => {
                             );
                         })}
                     </div>
-                    {/* <div className="flex items-center justify-center mt-5">
-                        <button className="flex items-center bg-blue-500 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 text-white font-bold py-2 px-4">
-                            Explore more
-                            <IoArrowForward  />
-                        </button>
-                    </div> */}
                 </div>
                 <div className="container mx-auto py-8">
                     <h1 className="text-3xl font-semibold mb-8 text-center dark:text-white">Education Timeline</h1>
