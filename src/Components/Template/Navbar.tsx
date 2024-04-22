@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { BsFillBrightnessHighFill, BsFillMoonStarsFill } from "react-icons/bs";
 import modeSubject from "../ModeSubject";
 import { DisplayMode } from "../../types/DisplayModes";
-import { useLocation } from "react-router-dom";
 
 
 const handleThemeSwitch = (theme: string, setTheme: React.Dispatch<React.SetStateAction<string>>) => {

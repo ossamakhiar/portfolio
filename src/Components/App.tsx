@@ -8,6 +8,7 @@ import Projects from './Projects';
 // import About from './About';
 import Contact from './Contact';
 import AboutPage from './Pages/AboutPage';
+import IndividualProject from './Pages/IndividualProject';
 
 
 function App() {
@@ -26,6 +27,10 @@ function App() {
 	{
 		path: "/contact-me",
 		element: <Contact />
+	},
+	{
+		path: "/projects/:id",
+		element: <IndividualProject />
 	}])
 
 	return (
