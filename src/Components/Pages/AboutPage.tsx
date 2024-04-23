@@ -36,37 +36,46 @@ const AboutPage = () => {
                         })}
                     </div>
                 </div>
-                <div className="container mx-auto py-8">
-                    <h1 className="text-3xl font-semibold mb-8 text-center dark:text-white">Education Timeline</h1>
-                    <div className="max-w-md mx-auto">
-                        {/* Timeline Item 1 */}
-                        <div className="relative">
-                            <div className="border-l-2 border-gray-300  absolute h-full top-0 -left-5"></div>
-                            <div className="bg-white dark:bg-slate-500 rounded-lg shadow-lg dark:shadow-slate-600 p-6 mb-6">
-                                <h3 className="text-xl font-semibold mb-2 dark:text-gray-900">Bachelor's Degree</h3>
-                                <p className="text-gray-600 dark:text-gray-900">University of Example</p>
-                                <p className="text-gray-600 dark:text-gray-900">2010 - 2014</p>
+                <div className="flex flex-col md:flex-row justify-around my-10 container">
+                    <div className="container">
+                        <h1 className="text-3xl font-semibold mb-8 text-center dark:text-white">Education Timeline</h1>
+                        <div className="max-w-md mx-auto">
+                            {/* Timeline Item 1 */}
+                            <div className="relative">
+                                <div className="border-l-2 border-gray-300  absolute h-full top-0 -left-5"></div>
+                                <div className="bg-white dark:bg-slate-500 rounded-lg shadow-lg dark:shadow-slate-600 p-6 mb-6">
+                                    <h3 className="text-xl font-semibold mb-2 dark:text-gray-900">Bachelor's Degree</h3>
+                                    <p className="text-gray-600 dark:text-gray-900">University of Example</p>
+                                    <p className="text-gray-600 dark:text-gray-900">2010 - 2014</p>
+                                </div>
                             </div>
-                        </div>
-                            {/* Timeline Item 2 */}
-                        <div className="relative">
-                            <div className="border-l-2 border-gray-300  absolute h-full top-0 -left-5"></div>
-                            <div className="bg-white dark:bg-slate-500 rounded-lg shadow-lg dark:shadow-slate-600 p-6 mb-6">
-                                <h3 className="text-xl font-semibold mb-2 dark:text-gray-900">Bachelor's Degree</h3>
-                                <p className="text-gray-600 dark:text-gray-900">University of Example</p>
-                                <p className="text-gray-600 dark:text-gray-900">2010 - 2014</p>
+                                {/* Timeline Item 2 */}
+                            <div className="relative">
+                                <div className="border-l-2 border-gray-300  absolute h-full top-0 -left-5"></div>
+                                <div className="bg-white dark:bg-slate-500 rounded-lg shadow-lg dark:shadow-slate-600 p-6 mb-6">
+                                    <h3 className="text-xl font-semibold mb-2 dark:text-gray-900">Bachelor's Degree</h3>
+                                    <p className="text-gray-600 dark:text-gray-900">University of Example</p>
+                                    <p className="text-gray-600 dark:text-gray-900">2010 - 2014</p>
+                                </div>
                             </div>
-                        </div>
-                            {/* Timeline Item 3 */}
-                        <div className="relative">
-                            <div className="border-l-2 border-gray-300  absolute h-full top-0 -left-5"></div>
-                            <div className="bg-white dark:bg-slate-500 rounded-lg shadow-lg dark:shadow-slate-600 p-6 mb-6">
-                                <h3 className="text-xl font-semibold mb-2 dark:text-gray-900">Bachelor's Degree</h3>
-                                <p className="text-gray-600 dark:text-gray-900">University of Example</p>
-                                <p className="text-gray-600 dark:text-gray-900">2010 - 2014</p>
+                                {/* Timeline Item 3 */}
+                            <div className="relative">
+                                <div className="border-l-2 border-gray-300  absolute h-full top-0 -left-5"></div>
+                                <div className="bg-white dark:bg-slate-500 rounded-lg shadow-lg dark:shadow-slate-600 p-6 mb-6">
+                                    <h3 className="text-xl font-semibold mb-2 dark:text-gray-900">Bachelor's Degree</h3>
+                                    <p className="text-gray-600 dark:text-gray-900">University of Example</p>
+                                    <p className="text-gray-600 dark:text-gray-900">2010 - 2014</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    {/* Experience Timeline */}
+                    {/* <div className="container">
+                        <h1 className="text-3xl font-semibold mb-8 text-center dark:text-white">Professional Experiences</h1>
+                        <div className="max-w-md mx-auto">
+                            <p className="dark:text-white font-bold">Seeking...</p>
+                        </div>
+                    </div> */}
                 </div>
             </div>
         </>

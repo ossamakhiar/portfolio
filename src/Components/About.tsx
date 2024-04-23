@@ -12,7 +12,7 @@ const About = () => {
                 a diverse range of challenges. From the intricacies of UNIX programming to the elegance of data structures and algorithms, 
                 I delve into multifaceted domains with enthusiasm. My explorations extend to the vibrant world of web development and mastering tools like Express.js. Additionally, I am delving into the realm of Docker, 
                 seeking to broaden my understanding of containerization and its impact on modern software deployment practices.
-                <a className="cursor-pointer text-blue-500 hover:text-blue-800"> Read more.</a>
+                <a href="/about" className="cursor-pointer text-blue-500 hover:text-blue-800 font-semibold"> Read more.</a>
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-5 mx-4">

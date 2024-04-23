@@ -55,7 +55,7 @@ const Contact = () => {
                             <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
                             <input type="text" name="email" id="email" className="bg-gray-50 border outline-none w-full  border-gray-300 text-gray-900 text-sm rounded-lg
                             block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400
-                            dark:text-white focus:ring dark:focus:ring-blue-500" placeholder="john.doe@company.com" required />
+                            dark:text-white focus:ring dark:focus:ring-blue-500" placeholder="john.doe@example.com" pattern=".+@example\.com"  required />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
@@ -70,7 +70,7 @@ const Contact = () => {
                         </button>
                     </form>
                 </div>
-                <div className="w-full flex flex-col md:items-end items-center">
+                <div className="w-full flex flex-col md:items-end items-center mb-4 md:mb-0">
                     {/* <div className="flex flex-col md:items-end mb-8">
                         <h1 className="text-gray-900 dark:text-white font-bold text-3xl mb-3">Oussama Khiar</h1>
                     </div> */}
