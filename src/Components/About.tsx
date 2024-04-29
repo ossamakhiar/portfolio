@@ -4,8 +4,8 @@ import technologies from "../data/techs.json"
 const About = () => {
 
     return (
-        <div className="max-w-7xl mx-auto items-center" id="section-about">
-            <h1 className='text-5xl font-bold text-center mb-3 text-gray-900 dark:text-white'>About me</h1>
+        <div className="max-w-7xl mx-auto items-center mb-10" id="section-about">
+            <h1 className='text-5xl font-bold text-center mb-10 text-gray-900 dark:text-white'>About me</h1>
             <p className='text-md md:text-xl  text-gray-900 dark:text-white font-medium font-basic mx-4'>
                 I am a passionate software engineering student at 1337 School, deeply engaged in developing my skills and contributing to 
                 various projects across my curriculum. My journey involves leveraging the power of C/C++ and Node.js to address 
@@ -15,7 +15,8 @@ const About = () => {
                 <a href="/about" className="cursor-pointer text-blue-500 hover:text-blue-800 font-semibold"> Read more.</a>
             </p>
 
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-5 mx-4">
+            <h1 className="text-blue-500 font-semibold text-2xl mx-4 underline mt-5 mb-3">Technologies:</h1>
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4  mx-4">
 
                 {technologies.map((tech) => {
                     return (

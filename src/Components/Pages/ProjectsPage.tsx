@@ -3,7 +3,7 @@ import Projects from '../Projects';
 const ProjectsPage = () => {
     return (
         <div className=''>
-            <Projects />
+            <Projects listAllProjects={true} />
         </div>
     );
 }

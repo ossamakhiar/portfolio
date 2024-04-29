@@ -38,36 +38,8 @@ const Navbar = () : JSX.Element => {
 		console.log("notified");
 	}, [theme]);
 
-
-	// const location = useLocation();
 	const pathname = window.location.pathname;
-	console.log(window.location);
-
-
-	// useEffect(() => {
-	// 	const handleScroll = () => {
-	// 		const sections = document.querySelectorAll('[id^="section-"]');
-	// 		console.log(sections);
-
-	// 		sections.forEach(section => {
-	// 			const rect = section.getBoundingClientRect();
-	// 			// console.log(section)
-	// 			const isSectionVisible = rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2;
-
-	// 			if (isSectionVisible) {
-	// 				setActiveSection(section.id);
-	// 			}
-	// 		});
-	// 	};
-
-	// 	window.addEventListener('scroll', handleScroll);
-
-	// 	return () => {
-	// 		window.removeEventListener('scroll', handleScroll);
-	// 	};
-	// }, []);
-  
-
+	// console.log(window.location);
 
 	return (
 		<>

@@ -4,63 +4,80 @@
         "title": "Blah blah",
         "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
         "img": "/src/assets/piscine_object.jpg",
-        "sourceCodeLink": "http://www.github.com/ossamakhiar/"
+        "sourceCodeLink": "http://www.github.com/ossamakhiar/",
+        "tags": {}
     },
     {
         "id": 2,
         "title": "Blah blah",
         "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
         "img": "/src/assets/netpractice.jpg",
-        "sourceCodeLink": "http://www.github.com/ossamakhiar/"
+        "sourceCodeLink": "http://www.github.com/ossamakhiar/",
+        "tags": {}
     },
     {
         "id": 3,
         "title": "Blah blah",
         "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
         "img": "/src/assets/netpractice.jpg",
-        "sourceCodeLink": "http://www.github.com/ossamakhiar/"
+        "sourceCodeLink": "http://www.github.com/ossamakhiar/",
+        "tags": {}
     },
     {
         "id": 4,
         "title": "Blah blah",
         "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
         "img": "/src/assets/netpractice.jpg",
-        "sourceCodeLink": "http://www.github.com/ossamakhiar/"
+        "sourceCodeLink": "http://www.github.com/ossamakhiar/",
+        "tags": {}
     },
     {
         "id": 5,
         "title": "Hello world",
         "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
         "img": "/src/assets/netpractice.jpg",
-        "sourceCodeLink": "http://www.github.com/ossamakhiar/"
+        "sourceCodeLink": "http://www.github.com/ossamakhiar/",
+        "tags": {}
     },
     {
         "id": 6,
         "title": "Piscine object",
         "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
         "img": "/src/assets/minishell.jpg",
-        "sourceCodeLink": "http://www.github.com/ossamakhiar/"
+        "sourceCodeLink": "http://www.github.com/ossamakhiar/",
+        "tags": {}
     },
     {
         "id": 7,
         "title": "Trenscendance 2024",
         "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
         "img": "/src/assets/philosophers.jpg",
-        "sourceCodeLink": "http://www.github.com/ossamakhiar/"
+        "sourceCodeLink": "http://www.github.com/ossamakhiar/",
+        "tags": {}
     },
     {
         "id": 8,
         "title": "Piscine object",
         "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
         "img": "/src/assets/netpractice.jpg",
-        "sourceCodeLink": "http://www.github.com/ossamakhiar/"
+        "sourceCodeLink": "http://www.github.com/ossamakhiar/",
+        "tags": {}
     },
     {
         "id": 9,
         "title": "Piscine object",
         "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
         "img": "/src/assets/netpractice.jpg",
-        "sourceCodeLink": "http://www.github.com/ossamakhiar/"
+        "sourceCodeLink": "http://www.github.com/ossamakhiar/",
+        "tags": {}
+    },
+    {
+        "id": 10,
+        "title": "Piscine object",
+        "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "img": "/src/assets/netpractice.jpg",
+        "sourceCodeLink": "http://www.github.com/ossamakhiar/",
+        "tags": {}
     }
 ]
 

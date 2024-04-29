@@ -30,6 +30,7 @@ const IndividualProject = () => {
                     </div>
                     <div>
                         <h1 className="text-3xl font-semibold dark:text-white mt-3 underline">Skills :</h1>
+                        
                     </div>
                     <div className="w-screen flex justify-center">
                         {/* <a href="https://github.com/ossamakhiar" style={{ width: '150px' }} className=" flex justify-center items-center gap-2 hover:scale-125 transition duration-300 py-2 bg-blue-500 rounded-lg hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 text-white font-bold">

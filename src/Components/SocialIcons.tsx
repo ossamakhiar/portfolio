@@ -3,7 +3,7 @@ import codeforcesIcon from "../assets/codeforces.svg"
 import { FaDiscord } from "react-icons/fa";
 
 
-const SocialIcons = ({iconsSize}) => {
+const SocialIcons = ({iconsSize} : {iconsSize: number}) => {
     return (
         <div className="flex gap-3 md:gap-5 mt-3">
             <a href="https://codeforces.com/profile/ossamakhiar" className="hover:scale-125 transition duration-300"><img src={codeforcesIcon} width={30}/></a>

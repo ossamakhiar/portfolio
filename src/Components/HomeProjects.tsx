@@ -2,8 +2,9 @@ import Projects from './Projects';
 import projects from "../data/projects.json"
 
 
-const ShowAll = (props) => {
-    if (!props.button)
+
+const ShowAllButton = ({ button }: {button: boolean}) => {
+    if (!button)
         return ;
     return (
         <div className="flex justify-center mt-5">
@@ -14,8 +15,8 @@ const ShowAll = (props) => {
 
 const HomeProjects = () => {
     return (<div>
-        <Projects />
-        <ShowAll button={projects.length >= 9} />
+        <Projects listAllProjects={false} />
+        <ShowAllButton button={projects.length >= 9} />
     </div>);
 }
 

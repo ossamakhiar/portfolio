@@ -3,10 +3,10 @@ import Footer from './Template/Footer';
 import Home from './Pages/Home';
 import "../style/index.css"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Projects from './Projects';
 import Contact from './Contact';
 import AboutPage from './Pages/AboutPage';
 import IndividualProject from './Pages/IndividualProject';
+import ProjectsPage from './Pages/ProjectsPage';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
 	},
 	{
 		path: "/projects",
-		element: <Projects />,
+		element: <ProjectsPage />,
 	},
 	{
 		path: '/about',
