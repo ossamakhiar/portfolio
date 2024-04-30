@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import dark_bg from "../assets/dark_bg.jpg"
 import light_bg from "../assets/light_bg.jpg"
 import { DisplayMode } from '../types/DisplayModes';
-import modeSubject from "./ModeSubject";
+import modeSubject from "./utils/ModeSubject";
 import { ObserverCallback } from '../types/ObserverCallback';
 import Typewriter from 'typewriter-effect';
 import { HiOutlineDocumentText } from "react-icons/hi";
-import SocialIcons from './SocialIcons';
+import SocialIcons from './utils/SocialIcons';
 
 const LandingPanel = () => {
     const defaultTheme : DisplayMode = localStorage.theme ? localStorage.theme : DisplayMode.LIGHT;

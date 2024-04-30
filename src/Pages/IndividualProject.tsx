@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import projects from "../../data/projects.json"
+import projects from "../data/projects.json"
 import { BsGithub } from "react-icons/bs";
 
 
@@ -17,10 +17,10 @@ const IndividualProject = () => {
 
     return (
         <div className="lg:max-w-7xl lg:mx-auto mx-10 ">
-            { (project) ? (
+            { project ? (
                 <>
                     <h1 className=" text-5xl text-center dark:text-white font-bold">{project.title}</h1>
-                    <div className="flex flex-col md:flex-row mt-5 gap-4">
+                    <div className="flex flex-col md:flex-row text-xl font-semibold mt-5 gap-4">
                         <div className="flex-grow md:w-2/5">
                             <img src={project.img} className=" rounded-2xl" />
                         </div>

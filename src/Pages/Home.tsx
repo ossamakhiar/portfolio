@@ -1,7 +1,7 @@
-import About from '../About';
-import LandingPanel from '../LandingPanel';
-import HomeProjects from '../HomeProjects';
-import Contact from '../Contact';
+import About from '../Components/About';
+import LandingPanel from '../Components/LandingPanel';
+import HomeProjects from '../Components/HomeProjects';
+import Contact from '../Components/Contact';
 
 const Home = () => {
     return (

@@ -7,8 +7,10 @@ interface ProjectsProps {
 }
 
 
-const Projects = ({ listAllProjects }: ProjectsProps) => {
+const Projects: React.FC<ProjectsProps> = ({listAllProjects}) => {
     const targetsRef = useRef<Element[]>([]);
+
+    console.log(listAllProjects);
 
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {

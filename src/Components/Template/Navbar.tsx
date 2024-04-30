@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { BsFillBrightnessHighFill, BsFillMoonStarsFill } from "react-icons/bs";
-import modeSubject from "../ModeSubject";
+import modeSubject from "../utils/ModeSubject";
 import { DisplayMode } from "../../types/DisplayModes";
 
 
@@ -20,17 +20,15 @@ function switchPageTheme() : void {
 	document.documentElement.classList.toggle(DisplayMode.DARK, localStorage.theme === DisplayMode.DARK);
 }
 
-function ThemeIcon({theme}) {
+function ThemeIcon({theme} : {theme: string}) {
 	if (theme !== DisplayMode.DARK)
 		return <BsFillMoonStarsFill size={25} />
 	
     return <BsFillBrightnessHighFill size={25} fill="white" />;
 }
 
-const Navbar = () : JSX.Element => {
+const Navbar = () => {
 	const [theme, setTheme] = useState<string>(localStorage.theme ? localStorage.theme : DisplayMode.LIGHT);
-	// const [activeSection, setActiveSection] = useState('');
-	
 	
 	useEffect(() => {
 		switchPageTheme();

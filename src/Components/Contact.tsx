@@ -1,4 +1,4 @@
-import SocialIcons from "./SocialIcons";
+import SocialIcons from "./utils/SocialIcons";
 import { FaEnvelope } from "react-icons/fa";
 
 
@@ -59,7 +59,7 @@ const Contact = () => {
                         </div>
                         <div className="mb-3">
                             <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
-                            <textarea id="message" name="message" className=" h-40 bg-gray-50 border outline-none w-full border-gray-300 text-gray-900 text-sm rounded-lg
+                            <textarea id="message" name="message" className=" h-64 bg-gray-50 border outline-none w-full border-gray-300 text-gray-900 text-sm rounded-lg
                             block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400
                             dark:text-white focus:ring dark:focus:ring-blue-500" placeholder="Enter your message" required />
                         </div>

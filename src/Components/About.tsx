@@ -15,7 +15,7 @@ const About = () => {
                 <a href="/about" className="cursor-pointer text-blue-500 hover:text-blue-800 font-semibold"> Read more.</a>
             </p>
 
-            <h1 className="text-blue-500 font-semibold text-2xl mx-4 underline mt-5 mb-3">Technologies:</h1>
+            <h1 className="text-blue-500 font-semibold text-2xl mx-4 underline mt-5 mb-4">Technologies:</h1>
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4  mx-4">
 
                 {technologies.map((tech) => {

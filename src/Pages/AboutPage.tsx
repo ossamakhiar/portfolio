@@ -1,4 +1,4 @@
-import technologies from "../../data/techs.json"
+import technologies from "../data/techs.json"
 
 const AboutPage = () => {
 
@@ -6,20 +6,22 @@ const AboutPage = () => {
         <>
             <div className="flex justify-center flex-col items-center">
                 <h1 className='text-5xl font-semibold text-center text-gray-900 dark:text-white mb-5'>About me</h1>
-                <a href="https://github.com/ossamakhiar" className="badge">
-                    <img src="https://badge.mediaplus.ma/darkblue/okhiar" alt="okhiar" />
-                </a>
                 <div className="max-w-7xl mx-auto items-center mt-10" id="section-about">
-                    <p className='text-md md:text-xl  text-gray-900 dark:text-white font-medium font-basic mx-4'>
-                    I'm an enthusiastic student of software engineering enrolled at 1337 School, fully immersed in honing my craft and actively 
-                    contributing to a variety of projects within my curriculum. My educational journey revolves around harnessing the capabilities 
-                    of C/C++ and Node.js to tackle a wide array of challenges. From navigating the complexities of UNIX programming to embracing 
-                    the beauty of data structures and algorithms, I eagerly explore diverse domains. My interests also extend into the dynamic 
-                    realm of web development, where I'm using tools like Express.js. Furthermore, I'm venturing into the world of Docker to 
-                    deepen my understanding of containerization and its significance in modern software deployment methodologies.
-                    </p>
+                    <div className="flex flex-col md:flex-row gap-4 items-center ">
+                        <a href="https://github.com/ossamakhiar" className="flex-grow md:w-2/5">
+                            <img src="https://badge.mediaplus.ma/darkblue/okhiar" alt="okhiar" />
+                        </a>
+                        <p className='text-md md:text-xl  text-gray-900 dark:text-white font-medium font-basic mx-3 flex-grow md:w-3/5'>
+                            I'm an enthusiastic student of software engineering enrolled at 1337 School, fully immersed in honing my craft and actively 
+                            contributing to a variety of projects within my curriculum. My educational journey revolves around harnessing the capabilities 
+                            of C/C++ and Node.js to tackle a wide array of challenges. From navigating the complexities of UNIX programming to embracing 
+                            the beauty of data structures and algorithms, I eagerly explore diverse domains. My interests also extend into the dynamic 
+                            realm of web development, where I'm using tools like Express.js. Furthermore, I'm venturing into the world of Docker to 
+                            deepen my understanding of containerization and its significance in modern software deployment methodologies.
+                        </p>
+                    </div>
 
-                    <h1 className="text-3xl font-semibold mb-8 text-center  dark:text-white">Skills</h1>
+                    <h1 className="text-3xl font-semibold my-8 text-center  dark:text-white">Skills</h1>
                     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-5 mx-4">
 
                         {technologies.map((tech) => {

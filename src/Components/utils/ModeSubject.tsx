@@ -1,5 +1,5 @@
-import { DisplayMode } from '../types/DisplayModes';
-import { ObserverCallback } from '../types/ObserverCallback';
+import { DisplayMode } from '../../types/DisplayModes';
+import { ObserverCallback } from '../../types/ObserverCallback';
 
 class ModeSubject {
     private observers : ObserverCallback [] = [];
