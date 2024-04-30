@@ -1,0 +1,12 @@
+    { 
+        "id": 8, 
+        "title": "Philosophers",
+        "content": "Philosophers is a project that explores the Dining Philosophers problem, delving into the concepts like concurrency, threads, processes, and understanding key operating system concepts like thread scheduling and context switching. Throughout this project, I encountered challenges such as deadlock and data races, and explored synchronization methods like mutexes and semaphores to effectively mitigate these issues.",
+        "img": "/src/assets/philosophers.jpg",
+        "sourceCodeLink": "http://www.github.com/ossamakhiar/",
+        "tags": {}
+    },
+
+    In this project, you will solve the dining philosophers problem, you will delve into the fundamentals of concurrent programming, exploring threading and multiprocessing techniques. Through the simulation of the dining philosophers problem, you'll gain insights into creating threads and employing synchronization primitives such as mutexes and semaphores. By implementing a solution that ensures no philosopher starves (deadlock), you'll tackle challenges in both multithreading and multiprocessing environments, honing your skills in concurrent programming and synchronization mechanisms
+
+    Webserv was a collaborative project where we implemented HTTP/1.1 RFC standards. We began by parsing the configuration file and setting up the core logic of the web server. Our approach involved using Non-blocking IO to efficiently manage concurrent connections. This allowed us to handle incoming requests promptly and generate appropriate responses. Additionally, we integrated CGI (Common Gateway Interface) to enable dynamic content generation on the server side. This project provided a comprehensive exploration of web server architecture and HTTP protocol implementation.

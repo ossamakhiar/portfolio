@@ -1,10 +1,10 @@
 [
     {
         "id": 1,
-        "title": "Blah blah",
-        "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-        "img": "/src/assets/piscine_object.jpg",
-        "sourceCodeLink": "http://www.github.com/ossamakhiar/",
+        "title": "NetPractice",
+        "content": "NetPractice is a comprehensive project consisting of 42 modules designed to provide a deep understanding of networking fundamentals. NetPractice involves delving into essential concepts such as IPv4 addressing, subnetting, and the pivotal roles of routers, switches, and other network devices.",
+        "img": "/src/assets/netpractice.jpg",
+        "sourceCodeLink": "#",
         "tags": {}
     },
     {
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "title": "Blah blah",
+        "title": "Philosophers",
         "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
         "img": "/src/assets/netpractice.jpg",
         "sourceCodeLink": "http://www.github.com/ossamakhiar/",
@@ -33,40 +33,40 @@
     },
     {
         "id": 5,
-        "title": "Hello world",
-        "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "title": "Cub3d",
+        "content": "Cub3d is a 3D game inspired by Wolfenstein 3D and developed using the C programming language. This project served as a profound exploration of computer graphics, particularly delving deep into the concepts of ray casting. Ray casting involves simulating a 3D environment by casting rays from the player's viewpoint and rendering the scene based on intersections with walls and other objects. Through this project, we gained hands-on experience in implementing graphics algorithms, understanding perspective rendering, and honing our skills in game development",
         "img": "/src/assets/netpractice.jpg",
         "sourceCodeLink": "http://www.github.com/ossamakhiar/",
         "tags": {}
     },
     {
         "id": 6,
-        "title": "Piscine object",
-        "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "title": "Minishell",
+        "content": "This project was a collaborative effort between two of us, working together to build a basic shell from scratch in the C language. As beginners in programming, we've encountered a significant learning curve, delving into processes, signal handling, file descriptors, and the core workings of shells.",
         "img": "/src/assets/minishell.jpg",
         "sourceCodeLink": "http://www.github.com/ossamakhiar/",
         "tags": {}
     },
     {
         "id": 7,
-        "title": "Trenscendance 2024",
+        "title": "Trenscendance",
         "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
         "img": "/src/assets/philosophers.jpg",
         "sourceCodeLink": "http://www.github.com/ossamakhiar/",
         "tags": {}
     },
-    {
-        "id": 8,
-        "title": "Piscine object",
-        "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-        "img": "/src/assets/netpractice.jpg",
+    { 
+        "id": 8, 
+        "title": "Philosophers",
+        "content": "In this project, you will solve the dining philosophers problem, you will delve into the fundamentals of concurrent programming, exploring threading and multiprocessing techniques. Through the simulation of the dining philosophers problem, you'll gain insights into creating threads and employing synchronization primitives such as mutexes and semaphores. By implementing a solution that ensures no philosopher starves (deadlock), you'll tackle challenges in both multithreading and multiprocessing environments, honing your skills in concurrent programming and synchronization mechanisms",
+        "img": "/src/assets/philosophers.jpg",
         "sourceCodeLink": "http://www.github.com/ossamakhiar/",
         "tags": {}
     },
     {
         "id": 9,
-        "title": "Piscine object",
-        "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "title": "WebServ",
+        "content": "Webserv was a collaborative project where we implemented HTTP/1.1 Web Server adhering to RFC standards. We began by setting up the core logic of the web server. Our approach involved using Non-blocking IO to efficiently manage concurrent connections. This allowed us to handle incoming requests promptly and generate appropriate responses. Additionally, we integrated CGI (Common Gateway Interface) to enable dynamic content generation on the server side. This project provided a comprehensive exploration of web server architecture and HTTP protocol implementation.",
         "img": "/src/assets/netpractice.jpg",
         "sourceCodeLink": "http://www.github.com/ossamakhiar/",
         "tags": {}
@@ -74,8 +74,8 @@
     {
         "id": 10,
         "title": "Piscine object",
-        "content": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-        "img": "/src/assets/netpractice.jpg",
+        "content": "This project delves into C++ object-oriented design, exploring design patterns and adhering to clean code principles through practical exercises. Topics covered include PNG writer implementation, UML modeling, graph theory, and more.",
+        "img": "/src/assets/piscine_object.jpg",
         "sourceCodeLink": "http://www.github.com/ossamakhiar/",
         "tags": {}
     }
