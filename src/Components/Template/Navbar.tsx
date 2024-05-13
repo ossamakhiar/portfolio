@@ -42,16 +42,16 @@ const Navbar = () => {
 	return (
 		<>
 		{/* Z-index to ensures that the navbar remains on top of the content. */}
-			<nav className="py-2 z-10 flex-no-wrap fixed top-0 w-full shadow-md bg-white border-b border-gray-300 dark:bg-gray-900"> {/* Add different shadow color in dark mode*/}
-				<div className="max-w-screen-xl container mx-auto flex justify-between items-center ">
-					<a className="hover:rotate-6 transition-transform ml-2" href="/"><h3 className="text-4xl dark:text-white">Khiar</h3></a>
+			<nav className="top-0 z-10 fixed flex-no-wrap border-gray-300 bg-white dark:bg-gray-900 shadow-md py-2 border-b w-full"> {/* Add different shadow color in dark mode*/}
+				<div className="flex justify-between items-center mx-auto max-w-screen-xl container">
+					<a className="hover:rotate-6 ml-2 transition-transform" href="/"><h3 className="text-4xl dark:text-white">Khiar</h3></a>
 						<ul className="flex space-x-5 nav-items">
 							<li className={`text-gray-900 dark:text-white text-[12px] md:text-[16px] ${pathname === '/' ? "active" : ""}`}><a href="/">Home</a></li>
 							<li className={`text-gray-900 dark:text-white text-[12px] md:text-[16px] ${pathname === '/about' ? "active" : ""}`}><a href="/about">About</a></li>
 							<li className={`text-gray-900 dark:text-white text-[12px] md:text-[16px] ${pathname === '/projects' ? "active" : ""}`}><a href="/projects">Projects</a></li>
 							<li className={`text-gray-900 dark:text-white text-[12px] md:text-[16px] ${pathname === '/contact-me' ? "active" : ""}`}><a href="/contact-me">Contact me</a></li>
 						</ul>
-						<button className=" p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" onClick={() => handleThemeSwitch(theme, setTheme)}>
+						<button className="hover:bg-gray-200 dark:hover:bg-gray-700 p-2 rounded-md" onClick={() => handleThemeSwitch(theme, setTheme)}>
 							<ThemeIcon theme={theme} />
 						</button>
 				</div>

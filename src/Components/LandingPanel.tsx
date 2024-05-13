@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import dark_bg from "../assets/dark_bg.jpg"
-import light_bg from "../assets/light_bg.jpg"
+import dark_bg from "/dark_bg.jpg"
+import light_bg from "/light_bg.jpg"
 import { DisplayMode } from '../types/DisplayModes';
 import modeSubject from "./utils/ModeSubject";
 import { ObserverCallback } from '../types/ObserverCallback';
@@ -12,9 +12,7 @@ const LandingPanel = () => {
     const defaultTheme : DisplayMode = localStorage.theme ? localStorage.theme : DisplayMode.LIGHT;
     const [theme, setTheme] = useState(defaultTheme);
 
-    const observerCallback: ObserverCallback = (state) => {
-        setTheme(state);
-    }
+    const observerCallback: ObserverCallback = (state) => setTheme(state);
 
     useEffect( () => {
         console.log("use effect");
@@ -24,10 +22,10 @@ const LandingPanel = () => {
 
     return (
         // bg-[url("../assets/light_bg.jpg")] bg-cover dark:bg-[url("../assets/dark_bg.jpg")]
-        <div id="section-home" className='h-screen items-center flex justify-center' style={{backgroundImage: `url(${theme === DisplayMode.DARK ? dark_bg : light_bg})`, backgroundSize: "cover"}}>
+        <div id="section-home" className='flex justify-center items-center h-screen' style={{backgroundImage: `url(${theme === DisplayMode.DARK ? dark_bg : light_bg})`, backgroundSize: "cover"}}>
             <main className="">
-                <div className="py-3 px-10">
-                    <div className="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white sm:text-5xl md:text-6xl" style={{color: "white"}}>
+                <div className="px-10 py-3">
+                    <div className="font-extrabold text-4xl text-gray-900 sm:text-5xl md:text-6xl dark:text-white tracking-tight" style={{color: "white"}}>
                         <Typewriter
                             onInit={(typewriter) => {
                                 typewriter.typeString('Hi, I\'m Oussama Khiar')
@@ -40,18 +38,18 @@ const LandingPanel = () => {
                               }}
                             />
                     </div>
-                    <h2 className="tracking-tight font-extrabold text-blue-500 text-4xl my-5">
-                        C/C++ Developer
+                    <h2 className="my-5 font-extrabold text-4xl text-blue-500 tracking-tight">
+                        Software engineer student
                     </h2>
-                    <p className="font-extrabold text-base text-gray-900 dark:text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                    <p className="sm:mx-auto lg:mx-0 sm:mt-5 md:mt-5 sm:max-w-xl font-extrabold text-base text-gray-900 sm:text-lg md:text-xl dark:text-white">
                         I'm a student of software engineering at 1337 Future is loading
                     </p>
                     <div className="flex justify-between">
                         <SocialIcons iconsSize={30} />
-                        <button className="ml-2 px-4 bg-blue-500 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 text-white font-bold flex items-center">
-                            <HiOutlineDocumentText size={16} strokeWidth={2.2} stroke="white"/>
+                        <button className="flex items-center bg-blue-500 hover:bg-blue-700 dark:hover:bg-blue-700 dark:bg-blue-600 ml-2 px-5 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold text-white">
+                            <HiOutlineDocumentText size={20} strokeWidth={2.2} stroke="white"/>
                             {/* stroke="white" */}
-                            Resume
+                            <p className="ml-1 text-white">Resume</p>
                         </button>
                     </div>
                 </div>

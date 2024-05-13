@@ -9,8 +9,8 @@ function App() {
 	return (
 		<div className='dark:bg-gray-900'>
 			<Navbar />
-			<div className="min-h-screen flex flex-col justify-between">
-				<div className=" mt-[59px]">
+			<div className="flex flex-col justify-between min-h-screen">
+				<div className="mt-[59px]">
 					<RouterProvider router={router} />
 				</div>
 				<Footer />

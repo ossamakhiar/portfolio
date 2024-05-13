@@ -2,9 +2,9 @@ import Projects from '../Components/Projects';
 
 const ProjectsPage = () => {
     return (
-        <div className=''>
+        // <div className=''>
             <Projects listAllProjects={true} />
-        </div>
+        // </div>
     );
 }
 

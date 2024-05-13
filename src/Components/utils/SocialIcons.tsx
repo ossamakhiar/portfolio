@@ -1,5 +1,5 @@
 import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
-import codeforcesIcon from "../../assets/codeforces.svg"
+import codeforcesIcon from "/codeforces.svg"
 import { FaDiscord } from "react-icons/fa";
 
 

@@ -1,14 +1,20 @@
+import { FormEvent } from "react";
 import SocialIcons from "./utils/SocialIcons";
 import { FaEnvelope } from "react-icons/fa";
 
 
-const sendEmail = async (event) => {
-    event.preventDefault(); // Prevent the default form submission behavior
+const sendEmail = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
 
-    const formData = new FormData(event.target);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const message = formData.get('message');
+    const formData = new FormData(event.currentTarget);
+    const name = formData.get('name') as string;
+    const email = formData.get('email') as string;
+    const message = formData.get('message') as string;
+
+    if (!name || !email || !message)
+        return ;
+
+    console.log(`dghI'm ${name} ${email} ${message}`)
 
     console.log(message, name, email);
 
@@ -39,47 +45,40 @@ const sendEmail = async (event) => {
 
 const Contact = () => {
     return (
-        <div className="mt-10 max-w-7xl mx-auto items-center" id="section-contact-me">
-            <h1 className='text-5xl font-bold text-center mb-3 text-gray-900 dark:text-white'>Contact</h1>
-            <h1 className="mx-5 text-2xl font-bold text-blue-500 mb-6">Connect with me</h1>
-            <div className="flex justify-between items-stretch flex-col md:flex-row  mx-5">
+        <div className="items-center mx-auto my-6 max-w-7xl" id="section-contact-me">
+            <h1 className='mb-3 font-bold text-5xl text-center text-gray-900 dark:text-white'>Contact</h1>
+            <h1 className="mx-5 mb-6 font-bold text-2xl text-blue-500">Connect with me</h1>
+            <div className="flex md:flex-row flex-col justify-between items-stretch mx-5">
                 <div className="w-full">
                     <form onSubmit={sendEmail}>
                         <div className="mb-3">
-                            <label htmlFor="full_name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your name</label>
-                            <input type="text" name="name" id="full_name" className="bg-gray-50 border outline-none w-full border-gray-300 text-gray-900 text-sm rounded-lg
-                            block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400
-                            dark:text-white focus:ring dark:focus:ring-blue-500" placeholder="Enter your name" required />
+                            <label htmlFor="full_name" className="block mb-2 font-medium text-gray-900 text-sm dark:text-white">Your name</label>
+                            <input type="text" name="name" id="full_name" className="block border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 p-2.5 border rounded-lg w-full text-gray-900 text-sm outline-none dark:placeholder-gray-400 dark:text-white focus:ring dark:focus:ring-blue-500" placeholder="Enter your name" required />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
-                            <input type="text" name="email" id="email" className="bg-gray-50 border outline-none w-full  border-gray-300 text-gray-900 text-sm rounded-lg
-                            block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400
-                            dark:text-white focus:ring dark:focus:ring-blue-500" placeholder="john.doe@example.com" pattern=".+@example\.com"  required />
+                            <label htmlFor="email" className="block mb-2 font-medium text-gray-900 text-sm dark:text-white">Email address</label>
+                            <input type="text" name="email" id="email" className="block border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 p-2.5 border rounded-lg w-full text-gray-900 text-sm outline-none dark:placeholder-gray-400 dark:text-white focus:ring dark:focus:ring-blue-500" placeholder="john.doe@example.com" required />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
-                            <textarea id="message" name="message" className=" h-64 bg-gray-50 border outline-none w-full border-gray-300 text-gray-900 text-sm rounded-lg
-                            block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400
-                            dark:text-white focus:ring dark:focus:ring-blue-500" placeholder="Enter your message" required />
+                            <label htmlFor="message" className="block mb-2 font-medium text-gray-900 text-sm dark:text-white">Message</label>
+                            <textarea id="message" name="message" className="block border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 p-2.5 border rounded-lg w-full h-64 text-gray-900 text-sm outline-none dark:placeholder-gray-400 dark:text-white focus:ring dark:focus:ring-blue-500" placeholder="Enter your message" required />
                         </div>
-                        <button type="submit" className="gap-2 flex items-center bg-blue-500 rounded-lg hover:bg-blue-700
-                        focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 text-white font-bold py-2 px-4">
+                        <button type="submit" className="flex items-center gap-2 bg-blue-500 hover:bg-blue-700 dark:hover:bg-blue-700 px-4 py-2 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 font-bold text-white">
                             Send
                             <FaEnvelope />
                         </button>
                     </form>
                 </div>
-                <div className="w-full flex flex-col md:items-end items-center mb-4 md:mb-0">
+                <div className="flex flex-col items-center md:items-end mb-4 md:mb-0 w-full">
                     {/* <div className="flex flex-col md:items-end mb-8">
-                        <h1 className="text-gray-900 dark:text-white font-bold text-3xl mb-3">Oussama Khiar</h1>
+                        <h1 className="mb-3 font-bold text-3xl text-gray-900 dark:text-white">Oussama Khiar</h1>
                     </div> */}
-                    <div className="flex flex-col md:items-end mb-8 mt-4 items-center">
-                        <h1 className="text-gray-900 dark:text-white font-bold text-3xl mb-3">Email</h1>
-                        <p className="text-bold text-blue-700 text-2xl">ossama.khiar@gmail.com</p>
+                    <div className="flex flex-col items-center md:items-end mt-4 mb-8">
+                        <h1 className="mb-3 font-bold text-3xl text-gray-900 dark:text-white">Email</h1>
+                        <p className="text-2xl text-blue-700 text-bold">ossama.khiar@gmail.com</p>
                     </div>
-                    <div className="flex flex-col md:items-end items-center">
-                        <h1 className="text-gray-900 dark:text-white font-bold text-3xl">Social</h1>
+                    <div className="flex flex-col items-center md:items-end">
+                        <h1 className="font-bold text-3xl text-gray-900 dark:text-white">Social</h1>
                         <SocialIcons iconsSize={35} />
                     </div>
                 </div>
