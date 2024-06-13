@@ -14,10 +14,12 @@ const ShowAllButton = ({ button }: {button: boolean}) => {
 };
 
 const HomeProjects = () => {
-    return (<div>
-        <Projects listAllProjects={false} />
-        <ShowAllButton button={projects.length >= 9} />
-    </div>);
+    return (
+        <div>
+            <Projects listAllProjects={false} />
+            <ShowAllButton button={projects.length >= 9} />
+        </div>
+    );
 }
 
 export default HomeProjects;

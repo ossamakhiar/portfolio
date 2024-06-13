@@ -52,7 +52,7 @@ const Projects: FC<ProjectsProps> = ({listAllProjects}) => {
                             // redundant check
                         <div key={project.id} ref={el => el && !targetsRef.current.find((elem) => elem === el) && targetsRef.current.push(el)} className="border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 opacity-0 shadow border rounded-lg sm:w-full md:max-w-sm transition-opacity duration-1000 ease-in-out">
                             <a href={`/projects/${project.id}`}>
-                                <img className="rounded-t-lg" src={project.img} alt="" />
+                                <img className="rounded-t-lg object-cover" src={project.img} alt="" />
                             </a>
                             <div className="p-5">
                                 <a href={`/projects/${project.id}`}>

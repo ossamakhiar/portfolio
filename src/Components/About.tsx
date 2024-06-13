@@ -18,18 +18,20 @@ const About = () => {
             <h1 className="mx-4 mt-5 mb-4 font-semibold text-2xl text-blue-500 underline">Technologies:</h1>
             <div className="gap-4 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 mx-4">
 
-                {technologies.map((tech) => {
-                    return (
-                        <a key={tech.id} href={tech.link} target="_blank" className="hover:scale-105 transition duration-300 ease-in-out">
-                            <div className="flex items-center gap-3">
-                                <div className="flex justify-center items-center bg-cyan-800 rounded-full w-[60px] h-[60px]">
-                                    <img src={tech.img_src} alt={tech.title.toLowerCase().replace(" ", "_")} width="30" height="30"/>
+                {
+                    technologies.map((tech) => {
+                        return (
+                            <a key={tech.id} href={tech.link} target="_blank" className="hover:scale-105 transition duration-300 ease-in-out">
+                                <div className="flex items-center gap-3">
+                                    <div className="flex justify-center items-center bg-cyan-800 rounded-full w-[60px] h-[60px]">
+                                        <img src={tech.img_src} alt={tech.title.toLowerCase().replace(" ", "_")} width="30" height="30"/>
+                                    </div>
+                                    <h2 className="text-gray-900 text-lg dark:text-gray-100">{tech.title}</h2>
                                 </div>
-                                <h2 className="text-gray-900 text-lg dark:text-gray-100">{tech.title}</h2>
-                            </div>
-                        </a>
-                    );
-                })}
+                            </a>
+                        );
+                    })
+                }
             </div>
             {/* <div className="flex justify-center items-center mt-5">
                 <button className="flex items-center bg-blue-500 hover:bg-blue-700 dark:hover:bg-blue-700 dark:bg-blue-600 px-4 py-2 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold text-white">

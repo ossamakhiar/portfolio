@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import dark_bg from "/dark_bg.jpg"
-import light_bg from "/light_bg.jpg"
+import { HiOutlineDocumentText } from "react-icons/hi";
+import { ObserverCallback } from '../types/ObserverCallback';
 import { DisplayMode } from '../types/DisplayModes';
 import modeSubject from "./utils/ModeSubject";
-import { ObserverCallback } from '../types/ObserverCallback';
-import Typewriter from 'typewriter-effect';
-import { HiOutlineDocumentText } from "react-icons/hi";
 import SocialIcons from './utils/SocialIcons';
+import Typewriter from 'typewriter-effect';
+import light_bg from "/light_bg.jpg"
+import dark_bg from "/dark_bg.jpg"
 
 const LandingPanel = () => {
     const defaultTheme : DisplayMode = localStorage.theme ? localStorage.theme : DisplayMode.LIGHT;
@@ -36,10 +36,10 @@ const LandingPanel = () => {
                                 wrapperClassName: "text-gray-900 dark:text-white", // WTFFFF
                                 cursorClassName: "text-gray-900 dark:text-white"
                               }}
-                            />
+                        />
                     </div>
                     <h2 className="my-5 font-extrabold text-4xl text-blue-500 tracking-tight">
-                        Software engineer student
+                        I'm a Software engineer student
                     </h2>
                     <p className="sm:mx-auto lg:mx-0 sm:mt-5 md:mt-5 sm:max-w-xl font-extrabold text-base text-gray-900 sm:text-lg md:text-xl dark:text-white">
                         I'm a student of software engineering at 1337 Future is loading
