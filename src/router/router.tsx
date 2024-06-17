@@ -1,10 +1,10 @@
 import { createBrowserRouter } from 'react-router-dom';
-import Home from './Pages/Home';
-import Contact from './Components/Contact';
-import AboutPage from './Pages/AboutPage';
-import IndividualProject from './Pages/IndividualProject';
-import ProjectsPage from './Pages/ProjectsPage';
-import Layout from './layouts/Layout';
+import Home from '../Pages/Home';
+import Contact from '../Components/Contact';
+import AboutPage from '../Pages/AboutPage';
+import IndividualProject from '../Pages/IndividualProject';
+import ProjectsPage from '../Pages/ProjectsPage';
+import Layout from '../layouts/Layout';
 
 
 

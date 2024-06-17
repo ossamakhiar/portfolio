@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import technologies from "../data/techs.json"
 
 
@@ -12,7 +13,7 @@ const About = () => {
                 a diverse range of challenges. From the intricacies of UNIX programming to the elegance of data structures and algorithms, 
                 I delve into multifaceted domains with enthusiasm. My explorations extend to the vibrant world of web development and mastering tools like Express.js. Additionally, I am delving into the realm of Docker, 
                 seeking to broaden my understanding of containerization and its impact on modern software deployment practices.
-                <a href="/about" className="font-semibold text-blue-500 hover:text-blue-800 cursor-pointer"> Read more.</a>
+                <Link to="/about" className="font-semibold text-blue-500 hover:text-blue-800 cursor-pointer"> Read more.</Link>
             </p>
 
             <h1 className="mx-4 mt-5 mb-4 font-semibold text-2xl text-blue-500 underline">Technologies:</h1>

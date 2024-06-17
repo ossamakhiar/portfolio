@@ -1,7 +1,7 @@
 // import Footer from './Components/Template/Footer';
 import "./style/index.css"
 import {  RouterProvider } from 'react-router-dom';
-import router from "./router"
+import router from "./router/router"
 
 
 function App() {

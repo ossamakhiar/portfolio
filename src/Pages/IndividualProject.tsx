@@ -29,12 +29,12 @@ const IndividualProject = () => {
                             {project.content}
                         </div>
                     </div>
-                    <div>
+                    <div className="mb-3">
                         <h1 className="mt-5 mb-2 font-semibold text-3xl dark:text-white underline m">Skills :</h1>
                         <div className="flex gap-4">
                             {project.tags.map((tag) => {
                                 return (
-                                    <span className=" bg-blue-500 text-white text-sm font-semibold px-2 py-1 rounded-lg">#{tag}</span>
+                                    <span className=" bg-blue-500 text-white text-xs md:text-sm font-semibold px-2 py-0.5 md:py-1 rounded-lg">#{tag}</span>
                                 )
                             })}
                         </div>
