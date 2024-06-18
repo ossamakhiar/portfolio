@@ -11,11 +11,11 @@ interface ProjectsProps {
 const Projects: FC<ProjectsProps> = ({listAllProjects}) => {
     const targetsRef = useRef<Element[]>([]);
 
-    console.log(listAllProjects);
+    // console.log(listAllProjects);
 
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
-            console.log(entries.length)
+            // console.log(entries.length)
             entries.forEach(entry => {
 
                 if (entry.isIntersecting)
@@ -26,9 +26,9 @@ const Projects: FC<ProjectsProps> = ({listAllProjects}) => {
         }, { threshold: 0.5 });
 
 
-        console.log(targetsRef);
+        // console.log(targetsRef);
         targetsRef.current.forEach(target => {
-            console.log(target);
+            // console.log(target);
             observer.observe(target);
         });
 

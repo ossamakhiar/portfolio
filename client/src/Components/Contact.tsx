@@ -1,4 +1,4 @@
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
 import SocialIcons from "./utils/SocialIcons";
 import { FaEnvelope } from "react-icons/fa";
 
@@ -14,9 +14,9 @@ const sendEmail = async (event: FormEvent<HTMLFormElement>) => {
     if (!name || !email || !message)
         return ;
 
-    console.log(`dghI'm ${name} ${email} ${message}`)
+    // console.log(`${name} ${email} ${message}`)
 
-    console.log(message, name, email);
+    // console.log(message, name, email);
 
     try {
       const response = await fetch('http://localhost:3000/send-mail', {
@@ -39,18 +39,40 @@ const sendEmail = async (event: FormEvent<HTMLFormElement>) => {
       console.log('Mail sent successfully:', data);
     } catch (error) {
       console.error('Error sending mail:', error);
+      throw error;
     }
   };
 
 
 const Contact = () => {
+    const [success, setSuccess] = useState(-1);
+
+    const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+        try {
+            await sendEmail(event);
+            setSuccess(1);
+        } catch (e) {
+            setSuccess(0);
+        }
+        setTimeout(() => setSuccess(-1), 2000)
+    }
+
+    console.log('conatc');
+
     return (
         <div className="items-center mx-auto my-6 max-w-7xl" id="section-contact-me">
+            {(success !== -1 ? (
+                <div className={`fixed top-[62px] left-[50%] md:font-semibold py-2 px-3 rounded-xl  ${success ? 'bg-green-300' : 'bg-red-300'}`}>
+                    {success ? "Mail sent successfuly" : "Something went wrong"}
+                </div>
+            ) : 
+                null)}
+
             <h1 className='mb-3 font-bold text-5xl text-center text-gray-900 dark:text-white'>Contact</h1>
             <h1 className="mx-5 mb-6 font-bold text-2xl text-blue-500">Connect with me</h1>
             <div className="flex md:flex-row flex-col justify-between items-stretch mx-5">
                 <div className="w-full">
-                    <form onSubmit={sendEmail}>
+                    <form onSubmit={handleSubmit}>
                         <div className="mb-3">
                             <label htmlFor="full_name" className="block mb-2 font-medium text-gray-900 text-sm dark:text-white">Your name</label>
                             <input type="text" name="name" id="full_name" className="block border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 p-2.5 border rounded-lg w-full text-gray-900 text-sm outline-none dark:placeholder-gray-400 dark:text-white focus:ring dark:focus:ring-blue-500" placeholder="Enter your name" required />

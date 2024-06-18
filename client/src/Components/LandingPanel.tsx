@@ -15,7 +15,7 @@ const LandingPanel = () => {
     const observerCallback: ObserverCallback = (state) => setTheme(state);
 
     useEffect( () => {
-        console.log("use effect");
+        // console.log("use effect");
         modeSubject.subscribe(observerCallback);
         // return () => modeSubject.unsubscribe(observerCallback);
     }, []);
