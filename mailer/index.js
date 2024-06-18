@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const sendMail = require("./mailer_sender")
 const cors = require('cors');
 const path = require('path');
+const serverless = require("serverless-http");
 require('dotenv').config();
 
 
@@ -47,6 +48,8 @@ app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../client/dist', 'index.html'));
 });
 
-app.listen(PORT, () => {
-    console.log(`App is running on port ${PORT}`)
-})
+// app.listen(PORT, () => {
+//     console.log(`App is running on port ${PORT}`)
+// })
+
+module.exports.handler = serverless(app);
