@@ -7,10 +7,12 @@ all: client backend
 
 client: ${BUILD_PATH}
 
-${BUILD_PATH}: 
+${BUILD_PATH}:
+	npm --prefix ${CLIENT_DIR} i
 	npm --prefix ${CLIENT_DIR} run build
 
 backend:
+	npm --prefix ${BACKEND_DIR} i
 	@if [ -d ${BUILD_PATH} ]; then \
 		echo "Client Exist"; \
 	else \

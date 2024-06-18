@@ -57,7 +57,7 @@ const Contact = () => {
         setTimeout(() => setSuccess(-1), 2000)
     }
 
-    console.log('conatc');
+    // console.log('contatc');
 
     return (
         <div className="items-center mx-auto my-6 max-w-7xl" id="section-contact-me">
