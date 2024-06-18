@@ -26,6 +26,9 @@ router.use(bodyParser.urlencoded({ extended: true }))
 
 router.use(express.static(path.resolve(__dirname, '../dist')));
 
+router.get('/', (req, res) => {
+    res.sendFile();
+})
 
 router.post("/send-mail", async (req, res) => {
     if (!req.body)
@@ -48,7 +51,7 @@ router.post("/send-mail", async (req, res) => {
 })
 
 router.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../dist', 'index.html'));
+    res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
 });
 
 // app.listen(PORT, () => {
