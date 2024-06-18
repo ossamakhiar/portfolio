@@ -18,7 +18,7 @@ backend:
 	else \
 		echo "\e[1;33m${MSG}\e[0m"; \
 	fi
-	node ${BACKEND_DIR}
+	node ${BACKEND_DIR}&
 
 clean:
 	rm -rf ${BUILD_PATH}
