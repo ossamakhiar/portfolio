@@ -27,7 +27,7 @@ router.use(bodyParser.urlencoded({ extended: true }))
 router.use(express.static(path.resolve(__dirname, '../dist')));
 
 router.get('/', (req, res) => {
-    res.sendFile();
+    res.send(`${__dirname} Hello World!`);
 })
 
 router.post("/send-mail", async (req, res) => {
