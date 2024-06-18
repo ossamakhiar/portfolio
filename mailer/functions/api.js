@@ -10,21 +10,24 @@ require('dotenv').config();
 const app = express();
 const PORT = 3000;
 
+const router = express.Router();
+
+
 // remove this when build the react app
 const corsOptions = {
     origin: 'http://localhost:5173',
     optionsSuccessStatus: 200
 }
-app.use(cors(corsOptions));
+router.use(cors(corsOptions));
 
 
 
-app.use(bodyParser.urlencoded({ extended: true }))
+router.use(bodyParser.urlencoded({ extended: true }))
 
-app.use(express.static(path.resolve(__dirname, '../dist')));
+router.use(express.static(path.resolve(__dirname, '../dist')));
 
 
-app.post("/send-mail", async (req, res) => {
+router.post("/send-mail", async (req, res) => {
     if (!req.body)
         res.status(500).json({ error: "Failed to send mail" });
 
@@ -44,7 +47,7 @@ app.post("/send-mail", async (req, res) => {
 
 })
 
-app.get('*', (req, res) => {
+router.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../dist', 'index.html'));
 });
 
