@@ -21,7 +21,7 @@ app.use(cors(corsOptions));
 
 app.use(bodyParser.urlencoded({ extended: true }))
 
-app.use(express.static(path.resolve(__dirname, '../client/dist')));
+app.use(express.static(path.resolve(__dirname, '../dist')));
 
 
 app.post("/send-mail", async (req, res) => {
@@ -45,11 +45,12 @@ app.post("/send-mail", async (req, res) => {
 })
 
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../client/dist', 'index.html'));
+    res.sendFile(path.resolve(__dirname, '../dist', 'index.html'));
 });
 
 // app.listen(PORT, () => {
 //     console.log(`App is running on port ${PORT}`)
 // })
 
+app.use("/.netlify/functions/app", router);
 module.exports.handler = serverless(app);

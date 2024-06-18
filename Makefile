@@ -4,6 +4,7 @@ BUILD_PATH=./client/dist
 MSG="Warning client not build run 'make build'!!!"
 
 all: client backend
+	mv client/dist/ ./mailer/
 
 run:
 	@if [ -d ${BUILD_PATH} ]; then \
