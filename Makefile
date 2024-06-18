@@ -5,6 +5,14 @@ MSG="Warning client not build run 'make build'!!!"
 
 all: client backend
 
+run:
+	@if [ -d ${BUILD_PATH} ]; then \
+		echo "Client Exist"; \
+	else \
+		echo "\e[1;33m${MSG}\e[0m"; \
+	fi
+	node ${BACKEND_DIR}
+
 client: ${BUILD_PATH}
 
 ${BUILD_PATH}:
@@ -13,12 +21,6 @@ ${BUILD_PATH}:
 
 backend:
 	npm --prefix ${BACKEND_DIR} i
-	@if [ -d ${BUILD_PATH} ]; then \
-		echo "Client Exist"; \
-	else \
-		echo "\e[1;33m${MSG}\e[0m"; \
-	fi
-	node ${BACKEND_DIR}&
 
 clean:
 	rm -rf ${BUILD_PATH}
